@@ -1,0 +1,7 @@
+%YAML 1.2
+---
+SlackKey: <INSERT_KEY>
+TwilioKey: <INSERT_KEY>
+ChannelKey: <INSERT_KEY>
+...
+
