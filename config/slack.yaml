@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
-SlackKey: <INSERT_KEY>
-ChannelKey: <INSERT_KEY>
-OpenAiKey: <INSERT_KEY>
----
+SlackKey: "xoxb-5808181460580-5829449669200-WhzbYcUISMrNLwpruvHVUo4t"
+ChannelKey: "C05PPMPLY74"
+OpenAiKey: "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"
+...
 
