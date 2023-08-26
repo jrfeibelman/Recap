@@ -1,6 +1,6 @@
 import cohere
 
-co = cohere.Client("7mbMs5jteG3Hayr664s5uPZfgyBQgugFw152cQNm")
+
 
 text = """@channel - I hope you are all excited for your first day of classes :party_parrot: We'll see you tomorrow in Studio so here are some logistics that you might find helpful:
 Early is on time, on time is late, and late is EXTREMELY late! Anticipate a dramatic increase in elevator traffic if you live in the house (especially around the start of Studio classes that occupies about 90% of the campus) and make sure you are seated and ready to go tomorrow at 2:55 PM. To support Studio means to support complicated logistics, so we cannot and will not wait for you to arrive. Show that you care for us and your team by being punctual. :heart:

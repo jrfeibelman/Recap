@@ -1,7 +1,15 @@
 import openai
-import time
+import time 
+from yaml import load, SafeLoader
+from slack import fetch_slack_messages, post_slack_messages
+import os
 
-openai.api_key = "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"
+with open("%s/config/slack.yaml" % os.getcwd()) as cfg:
+    d = load(cfg, SafeLoader)
+    if "OpenAiKey" not in d:
+        print("Error: 'SlackKey' not found in configs")
+    openai.api_key = d["OpenAiKey"]
+
 
 textToSummarize = """@channel - I hope you are all excited for your first day of classes :party_parrot: We'll see you tomorrow in Studio so here are some logistics that you might find helpful:
 Early is on time, on time is late, and late is EXTREMELY late! Anticipate a dramatic increase in elevator traffic if you live in the house (especially around the start of Studio classes that occupies about 90% of the campus) and make sure you are seated and ready to go tomorrow at 2:55 PM. To support Studio means to support complicated logistics, so we cannot and will not wait for you to arrive. Show that you care for us and your team by being punctual. :heart:
@@ -18,10 +26,21 @@ For Thursday, you will have a rare, but important "double feature" that will occ
 If you have any questions at this point, please let us know! We look forward to kicking off your semester in the Studio"""
 
 #call Jason's function to retrieve messages over last 3 hours
-messages = []
+slack_messages = fetch_slack_messages("%s/config/slack.yaml" % os.getcwd())
+slack_response = slack_messages["messages"] #call Raj's clean function on this
 
+clean_messages = []
+for m in slack_response['messages']:
+    print('here')
+    if ('client_msg_id' in  m):
+        print('here1')
+        clean_message = f"From {m['client_msg_id']}: {m['text']}"
+        clean_messages.append(clean_message)
+    script = "\n".join(reversed(clean_messages))
 
-textToSummarize = "Here are the messages from the conversation that you need to summarize: {}.".format(", ".join(messages))
+print(script)
+
+"""textToSummarize = "Here are the messages from the conversation that you need to summarize: {}.".format(", ".join(messages))
 
 
 while True:
@@ -33,8 +52,10 @@ while True:
         ],
     temperature=0
     )
+    post_slack_messages("%s/config/slack.yaml" % os.getcwd(), completion.choices[0].message.content)
+    time.sleep(10800)"""
     
-    time.sleep(10800)
     
-    
+
+
 #print(completion.choices[0].message)

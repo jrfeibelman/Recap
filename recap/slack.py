@@ -1,5 +1,4 @@
-from recap.slack import WebClient
-from slack.errors import SlackApiError
+from slack_sdk import WebClient
 from yaml import load, SafeLoader
 from datetime import datetime, timedelta
 
