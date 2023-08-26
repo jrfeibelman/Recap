@@ -7,32 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		893251ED2A9A583D00B9DE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893251EC2A9A583D00B9DE80 /* Assets.xcassets */; };
-		893251F32A9A583E00B9DE80 /* Recap MessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 893251F22A9A583E00B9DE80 /* Recap MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		893251F82A9A583E00B9DE80 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893251F72A9A583E00B9DE80 /* Messages.framework */; };
-		893251FB2A9A583E00B9DE80 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893251FA2A9A583E00B9DE80 /* MessagesViewController.swift */; };
-		893251FE2A9A583E00B9DE80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893251FC2A9A583E00B9DE80 /* MainInterface.storyboard */; };
-		893252002A9A583F00B9DE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893251FF2A9A583F00B9DE80 /* Assets.xcassets */; };
+		893252182A9A5BD600B9DE80 /* RecapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893252172A9A5BD600B9DE80 /* RecapApp.swift */; };
+		8932521A2A9A5BD600B9DE80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893252192A9A5BD600B9DE80 /* ContentView.swift */; };
+		8932521C2A9A5BD800B9DE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8932521B2A9A5BD800B9DE80 /* Assets.xcassets */; };
+		8932521F2A9A5BD800B9DE80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8932521E2A9A5BD800B9DE80 /* Preview Assets.xcassets */; };
+		8932522C2A9A5BF400B9DE80 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8932522B2A9A5BF400B9DE80 /* Messages.framework */; };
+		8932522F2A9A5BF400B9DE80 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932522E2A9A5BF400B9DE80 /* MessagesViewController.swift */; };
+		893252322A9A5BF400B9DE80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893252302A9A5BF400B9DE80 /* MainInterface.storyboard */; };
+		893252342A9A5BF800B9DE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893252332A9A5BF800B9DE80 /* Assets.xcassets */; };
+		893252382A9A5BF800B9DE80 /* Recap.ai.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 893252292A9A5BF400B9DE80 /* Recap.ai.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		893251F42A9A583E00B9DE80 /* PBXContainerItemProxy */ = {
+		893252362A9A5BF800B9DE80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 893251E32A9A583B00B9DE80 /* Project object */;
+			containerPortal = 8932520C2A9A5BD600B9DE80 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 893251F12A9A583E00B9DE80;
-			remoteInfo = "Recap MessagesExtension";
+			remoteGlobalIDString = 893252282A9A5BF400B9DE80;
+			remoteInfo = Recap.ai;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		893252072A9A583F00B9DE80 /* Embed Foundation Extensions */ = {
+		8932523C2A9A5BF900B9DE80 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				893251F32A9A583E00B9DE80 /* Recap MessagesExtension.appex in Embed Foundation Extensions */,
+				893252382A9A5BF800B9DE80 /* Recap.ai.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,130 +43,153 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		893251E92A9A583B00B9DE80 /* Recap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		893251EC2A9A583D00B9DE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		893251F22A9A583E00B9DE80 /* Recap MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Recap MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		893251F72A9A583E00B9DE80 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		893251FA2A9A583E00B9DE80 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		893251FD2A9A583E00B9DE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		893251FF2A9A583F00B9DE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		893252012A9A583F00B9DE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		893252142A9A5BD600B9DE80 /* Recap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		893252172A9A5BD600B9DE80 /* RecapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapApp.swift; sourceTree = "<group>"; };
+		893252192A9A5BD600B9DE80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8932521B2A9A5BD800B9DE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8932521E2A9A5BD800B9DE80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		893252292A9A5BF400B9DE80 /* Recap.ai.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Recap.ai.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8932522B2A9A5BF400B9DE80 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		8932522E2A9A5BF400B9DE80 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		893252312A9A5BF400B9DE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		893252332A9A5BF800B9DE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		893252352A9A5BF800B9DE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		893251EF2A9A583E00B9DE80 /* Frameworks */ = {
+		893252112A9A5BD600B9DE80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893251F82A9A583E00B9DE80 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		893252262A9A5BF400B9DE80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8932522C2A9A5BF400B9DE80 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		893251E22A9A583B00B9DE80 = {
+		8932520B2A9A5BD600B9DE80 = {
 			isa = PBXGroup;
 			children = (
-				893251EB2A9A583B00B9DE80 /* Recap */,
-				893251F92A9A583E00B9DE80 /* Recap MessagesExtension */,
-				893251F62A9A583E00B9DE80 /* Frameworks */,
-				893251EA2A9A583B00B9DE80 /* Products */,
+				893252162A9A5BD600B9DE80 /* Recap */,
+				8932522D2A9A5BF400B9DE80 /* Recap.ai */,
+				8932522A2A9A5BF400B9DE80 /* Frameworks */,
+				893252152A9A5BD600B9DE80 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		893251EA2A9A583B00B9DE80 /* Products */ = {
+		893252152A9A5BD600B9DE80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				893251E92A9A583B00B9DE80 /* Recap.app */,
-				893251F22A9A583E00B9DE80 /* Recap MessagesExtension.appex */,
+				893252142A9A5BD600B9DE80 /* Recap.app */,
+				893252292A9A5BF400B9DE80 /* Recap.ai.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		893251EB2A9A583B00B9DE80 /* Recap */ = {
+		893252162A9A5BD600B9DE80 /* Recap */ = {
 			isa = PBXGroup;
 			children = (
-				893251EC2A9A583D00B9DE80 /* Assets.xcassets */,
+				893252172A9A5BD600B9DE80 /* RecapApp.swift */,
+				893252192A9A5BD600B9DE80 /* ContentView.swift */,
+				8932521B2A9A5BD800B9DE80 /* Assets.xcassets */,
+				8932521D2A9A5BD800B9DE80 /* Preview Content */,
 			);
 			path = Recap;
 			sourceTree = "<group>";
 		};
-		893251F62A9A583E00B9DE80 /* Frameworks */ = {
+		8932521D2A9A5BD800B9DE80 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				893251F72A9A583E00B9DE80 /* Messages.framework */,
+				8932521E2A9A5BD800B9DE80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8932522A2A9A5BF400B9DE80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8932522B2A9A5BF400B9DE80 /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		893251F92A9A583E00B9DE80 /* Recap MessagesExtension */ = {
+		8932522D2A9A5BF400B9DE80 /* Recap.ai */ = {
 			isa = PBXGroup;
 			children = (
-				893251FA2A9A583E00B9DE80 /* MessagesViewController.swift */,
-				893251FC2A9A583E00B9DE80 /* MainInterface.storyboard */,
-				893251FF2A9A583F00B9DE80 /* Assets.xcassets */,
-				893252012A9A583F00B9DE80 /* Info.plist */,
+				8932522E2A9A5BF400B9DE80 /* MessagesViewController.swift */,
+				893252302A9A5BF400B9DE80 /* MainInterface.storyboard */,
+				893252332A9A5BF800B9DE80 /* Assets.xcassets */,
+				893252352A9A5BF800B9DE80 /* Info.plist */,
 			);
-			path = "Recap MessagesExtension";
+			path = Recap.ai;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		893251E82A9A583B00B9DE80 /* Recap */ = {
+		893252132A9A5BD600B9DE80 /* Recap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 893252082A9A583F00B9DE80 /* Build configuration list for PBXNativeTarget "Recap" */;
+			buildConfigurationList = 893252222A9A5BD800B9DE80 /* Build configuration list for PBXNativeTarget "Recap" */;
 			buildPhases = (
-				893251E72A9A583B00B9DE80 /* Resources */,
-				893252072A9A583F00B9DE80 /* Embed Foundation Extensions */,
+				893252102A9A5BD600B9DE80 /* Sources */,
+				893252112A9A5BD600B9DE80 /* Frameworks */,
+				893252122A9A5BD600B9DE80 /* Resources */,
+				8932523C2A9A5BF900B9DE80 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				893251F52A9A583E00B9DE80 /* PBXTargetDependency */,
+				893252372A9A5BF800B9DE80 /* PBXTargetDependency */,
 			);
 			name = Recap;
 			productName = Recap;
-			productReference = 893251E92A9A583B00B9DE80 /* Recap.app */;
-			productType = "com.apple.product-type.application.messages";
+			productReference = 893252142A9A5BD600B9DE80 /* Recap.app */;
+			productType = "com.apple.product-type.application";
 		};
-		893251F12A9A583E00B9DE80 /* Recap MessagesExtension */ = {
+		893252282A9A5BF400B9DE80 /* Recap.ai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 893252042A9A583F00B9DE80 /* Build configuration list for PBXNativeTarget "Recap MessagesExtension" */;
+			buildConfigurationList = 893252392A9A5BF900B9DE80 /* Build configuration list for PBXNativeTarget "Recap.ai" */;
 			buildPhases = (
-				893251EE2A9A583E00B9DE80 /* Sources */,
-				893251EF2A9A583E00B9DE80 /* Frameworks */,
-				893251F02A9A583E00B9DE80 /* Resources */,
+				893252252A9A5BF400B9DE80 /* Sources */,
+				893252262A9A5BF400B9DE80 /* Frameworks */,
+				893252272A9A5BF400B9DE80 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Recap MessagesExtension";
-			productName = "Recap MessagesExtension";
-			productReference = 893251F22A9A583E00B9DE80 /* Recap MessagesExtension.appex */;
+			name = Recap.ai;
+			productName = Recap.ai;
+			productReference = 893252292A9A5BF400B9DE80 /* Recap.ai.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		893251E32A9A583B00B9DE80 /* Project object */ = {
+		8932520C2A9A5BD600B9DE80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					893251E82A9A583B00B9DE80 = {
+					893252132A9A5BD600B9DE80 = {
 						CreatedOnToolsVersion = 14.3;
 					};
-					893251F12A9A583E00B9DE80 = {
+					893252282A9A5BF400B9DE80 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 893251E62A9A583B00B9DE80 /* Build configuration list for PBXProject "Recap" */;
+			buildConfigurationList = 8932520F2A9A5BD600B9DE80 /* Build configuration list for PBXProject "Recap" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,61 +197,71 @@
 				en,
 				Base,
 			);
-			mainGroup = 893251E22A9A583B00B9DE80;
-			productRefGroup = 893251EA2A9A583B00B9DE80 /* Products */;
+			mainGroup = 8932520B2A9A5BD600B9DE80;
+			productRefGroup = 893252152A9A5BD600B9DE80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				893251E82A9A583B00B9DE80 /* Recap */,
-				893251F12A9A583E00B9DE80 /* Recap MessagesExtension */,
+				893252132A9A5BD600B9DE80 /* Recap */,
+				893252282A9A5BF400B9DE80 /* Recap.ai */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		893251E72A9A583B00B9DE80 /* Resources */ = {
+		893252122A9A5BD600B9DE80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893251ED2A9A583D00B9DE80 /* Assets.xcassets in Resources */,
+				8932521F2A9A5BD800B9DE80 /* Preview Assets.xcassets in Resources */,
+				8932521C2A9A5BD800B9DE80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		893251F02A9A583E00B9DE80 /* Resources */ = {
+		893252272A9A5BF400B9DE80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893252002A9A583F00B9DE80 /* Assets.xcassets in Resources */,
-				893251FE2A9A583E00B9DE80 /* MainInterface.storyboard in Resources */,
+				893252342A9A5BF800B9DE80 /* Assets.xcassets in Resources */,
+				893252322A9A5BF400B9DE80 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		893251EE2A9A583E00B9DE80 /* Sources */ = {
+		893252102A9A5BD600B9DE80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893251FB2A9A583E00B9DE80 /* MessagesViewController.swift in Sources */,
+				8932521A2A9A5BD600B9DE80 /* ContentView.swift in Sources */,
+				893252182A9A5BD600B9DE80 /* RecapApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		893252252A9A5BF400B9DE80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8932522F2A9A5BF400B9DE80 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		893251F52A9A583E00B9DE80 /* PBXTargetDependency */ = {
+		893252372A9A5BF800B9DE80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 893251F12A9A583E00B9DE80 /* Recap MessagesExtension */;
-			targetProxy = 893251F42A9A583E00B9DE80 /* PBXContainerItemProxy */;
+			target = 893252282A9A5BF400B9DE80 /* Recap.ai */;
+			targetProxy = 893252362A9A5BF800B9DE80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		893251FC2A9A583E00B9DE80 /* MainInterface.storyboard */ = {
+		893252302A9A5BF400B9DE80 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				893251FD2A9A583E00B9DE80 /* Base */,
+				893252312A9A5BF400B9DE80 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -233,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		893252022A9A583F00B9DE80 /* Debug */ = {
+		893252202A9A5BD800B9DE80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +329,7 @@
 			};
 			name = Debug;
 		};
-		893252032A9A583F00B9DE80 /* Release */ = {
+		893252212A9A5BD800B9DE80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,90 +383,108 @@
 			};
 			name = Release;
 		};
-		893252052A9A583F00B9DE80 /* Debug */ = {
+		893252232A9A5BD800B9DE80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Recap/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Recap MessagesExtension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Recap;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ct.hackathon.Recap.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ct.hackathon.Recap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		893252062A9A583F00B9DE80 /* Release */ = {
+		893252242A9A5BD800B9DE80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Recap/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Recap MessagesExtension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Recap;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ct.hackathon.Recap.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ct.hackathon.Recap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		893252092A9A583F00B9DE80 /* Debug */ = {
+		8932523A2A9A5BF900B9DE80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = Recap.ai/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Recap.ai;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ct.hackathon.Recap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ct.hackathon.Recap.Recap-ai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8932520A2A9A583F00B9DE80 /* Release */ = {
+		8932523B2A9A5BF900B9DE80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = Recap.ai/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Recap.ai;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ct.hackathon.Recap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ct.hackathon.Recap.Recap-ai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,34 +494,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		893251E62A9A583B00B9DE80 /* Build configuration list for PBXProject "Recap" */ = {
+		8932520F2A9A5BD600B9DE80 /* Build configuration list for PBXProject "Recap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				893252022A9A583F00B9DE80 /* Debug */,
-				893252032A9A583F00B9DE80 /* Release */,
+				893252202A9A5BD800B9DE80 /* Debug */,
+				893252212A9A5BD800B9DE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		893252042A9A583F00B9DE80 /* Build configuration list for PBXNativeTarget "Recap MessagesExtension" */ = {
+		893252222A9A5BD800B9DE80 /* Build configuration list for PBXNativeTarget "Recap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				893252052A9A583F00B9DE80 /* Debug */,
-				893252062A9A583F00B9DE80 /* Release */,
+				893252232A9A5BD800B9DE80 /* Debug */,
+				893252242A9A5BD800B9DE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		893252082A9A583F00B9DE80 /* Build configuration list for PBXNativeTarget "Recap" */ = {
+		893252392A9A5BF900B9DE80 /* Build configuration list for PBXNativeTarget "Recap.ai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				893252092A9A583F00B9DE80 /* Debug */,
-				8932520A2A9A583F00B9DE80 /* Release */,
+				8932523A2A9A5BF900B9DE80 /* Debug */,
+				8932523B2A9A5BF900B9DE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 893251E32A9A583B00B9DE80 /* Project object */;
+	rootObject = 8932520C2A9A5BD600B9DE80 /* Project object */;
 }

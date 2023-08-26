@@ -1,6 +1,6 @@
 //
 //  MessagesViewController.swift
-//  Recap MessagesExtension
+//  Recap.ai
 //
 //  Created by Jason Feibelman on 8/26/23.
 //
