@@ -1,5 +1,5 @@
-#configs
-configs/slack.yaml
+#config
+#config/slack.yaml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
