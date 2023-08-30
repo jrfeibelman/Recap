@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # config
 config/
+=======
+#configs
+config/slack.yaml
+>>>>>>> temp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
